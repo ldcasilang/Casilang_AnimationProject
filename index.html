@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Title</title>
+    <link rel="stylesheet" href="style.css" />
+   
+</head>
+
+<body>
+   
+    <img class="pokemon" id="Pokemon1" src="PokemonReveal 1.png">
+    <img class="pokemon pokemon-reveal" src="Pokemon 1.png">
+    <img class="pokemon" id="Pokemon2" src="PokemonReveal 2.png">
+    <img class="pokemon pokemon-reveal" src="Pokemon 2.png">
+    <img class="pokemon" id="Pokemon3" src="PokemonReveal 3.png">
+    <img class="pokemon pokemon-reveal" src="Pokemon 3.png">
+
+    <div class="button-container">
+        <button onclick="changeImage('Pokemon1')" id="Button1" class="button">1</button>
+        <button onclick="changeImage('Pokemon2')" id="Button2" class="button">2</button>
+        <button onclick="changeImage('Pokemon3')" id="Button3" class="button">3</button>
+    </div>
+
+    <div class="slider-container">
+        <input type="range" min="0" max="1" step="0.1" value="0" class="slider" id="revealSlider" oninput="revealPokemon(this.value)">
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
